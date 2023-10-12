@@ -31,7 +31,6 @@ class RouterRoots {
     constructor(router){
         this.router = router;
     }
-
     static convertHTML(HTML){
       if (HTML) return new String(HTML)
       return ""
@@ -139,7 +138,6 @@ function router (){
         title(),
         Layaout()
     ];
-  
     return(
        RouterRoots.convertHTML(routers)
     )

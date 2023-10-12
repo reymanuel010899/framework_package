@@ -1,5 +1,5 @@
 // import Reyyx from "../core/documentInit"
-import RouterRoots from "../../core/main/routerRoot"
+import RouterRoots from "../../core/js/routerRoot"
 
 //component
 import Message from "../componet/messege"
@@ -12,7 +12,6 @@ export default function router (){
         title(),
         Layaout()
     ]
-  
     return(
        RouterRoots.convertHTML(routers)
     )
