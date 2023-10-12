@@ -1,4 +1,4 @@
-import router from "./router"
+import router from "../../src/router/router"
 function Start(){
     return router()
 }

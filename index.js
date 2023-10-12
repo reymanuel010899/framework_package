@@ -1,5 +1,5 @@
 
-import Reyyx  from "./documentInit"
-import Main from "./main";
+import Reyyx  from "./core/js/documentInit"
+import Main from "./core/main/main";
 
 Reyyx.renderingApp((Main()))

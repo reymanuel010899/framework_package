@@ -1,7 +1,7 @@
 export default {
-    input: 'index.js',
+    input: './index.js',
     output: {
-        file: 'bundle.js',
+        file: './core/main/bundle.js',
         format: 'cjs',
     }
 }
