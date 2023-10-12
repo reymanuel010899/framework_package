@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup --watch --config",
     "start": "node index.js",
-    "watch:js": "chokidar '**/*.js' -c 'npm run build' --initial"
+    "watch:py": "chokidar './framework_package-1/core/py/*.py' -c 'npm run build' --initial"
   },
   "repository": {
     "type": "git",

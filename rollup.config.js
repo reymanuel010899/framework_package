@@ -6,15 +6,14 @@ export default [{
     },
    
 },
-{
-    input: './framework_package-1/core/py/main.js',
-    output: {
-        file: './framework_package-1/core/py/main.py',
-        // paths: "./framework_package-1/core/py/main.js",
-        format: 'cjs',
-    },
+// {
+//     input: './framework_package-1/core/py/main.js',
+//     output: {
+//         file: './framework_package-1/core/py/main.py',
+//         format: 'cjs',
+//     },
    
-},
+// },
 
 
 
