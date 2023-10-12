@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "name": "framework_package",
+  "version": "0.0.1",
+  "description": "framework reyyx, reyyx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --watch --config",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "reymanuelferrera78@gmail.com"
+  },
+  "keywords": [
+    "reyyx",
+    "framework",
+    "reyyx"
+  ],
+  "author": "REY MANUEL FERRERAS ADAMES",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
