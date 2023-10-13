@@ -1,44 +1,4 @@
-'use strict';
-
-class Reyyx {
-    constructor(...args) {
-        this.args = args;
-    }
-    static renderingApp({method}) {
-        const roots = document.querySelector("#init");
-        const div = document.createElement("div");
-        div.innerHTML = method();
-        roots.appendChild(div);
-    }
-
-    async bringMeData(url, method = "GET", header = {}) {
-        if (method === "GET") {
-            const result = await fetch(url);
-            const data = await result.json();
-            if (!result.ok) {
-                return `your url is not correct "${url}"`;
-            }
-            return data;
-        } else if (method === "POST") {
-            // Implement POST logic here
-            return;
-        }
-        return "message";
-    }
-}
-
-class RouterRoots {
-    constructor(router){
-        this.router = router;
-    }
-    static convertHTML(HTML){
-      if (HTML) return new String(HTML)
-      return ""
-    } 
-
-    }
-
-function InitComponet(){
+export default function InitComponet(){
 
     return (`<nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -77,42 +37,3 @@ function InitComponet(){
     </div>
   </nav>`)
 }
-
-function Message(){
-    return (`
-
-    <div class="row">
-    <div class="col">
-      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-    </div>
-    <div class="col">
-      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-    </div>
-  </div>`)
-}
-
-// import Reyyx from "../core/documentInit"
-
-function router (){
-    var routers = [
-        InitComponet(),
-        Message(),
-        // title(),
-        // Layaout()
-    ];
-    return(
-       RouterRoots.convertHTML(routers)
-    )
-}
-
-function Start(){
-    return router()
-}
-
-function Main() {
-    return {
-        method: Start,
-        }
-}
-
-Reyyx.renderingApp((Main()));

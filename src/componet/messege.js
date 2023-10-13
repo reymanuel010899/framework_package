@@ -3,22 +3,12 @@
 export default function Message(){
     return (`
 
-    555555555555555555555555555555555555555555555555555
-    <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 style="color:red" class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
     </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">An item</li>
-      <li class="list-group-item">A second item</li>
-      <li class="list-group-item">A third item</li>
-    </ul>
-
-    <div class="card-body">
-      <a href="#" class="card-link">Card link</a>
-      <a href="/" class="card-link">Another link</a>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
     </div>
   </div>`)
 }
